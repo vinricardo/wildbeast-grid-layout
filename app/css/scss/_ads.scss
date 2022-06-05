@@ -1,0 +1,11 @@
+aside.ads {
+  & {
+    grid-area: ads;
+  }
+  background: #fafbfc;
+  display: grid;
+  align-content: flex-start;
+  padding: 30px;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

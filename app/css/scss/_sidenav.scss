@@ -1,0 +1,22 @@
+aside.sidenav {
+  & {
+    grid-area: sidenav;
+  }
+  background: #fafbfc;
+  padding: 30px;
+
+  a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba($color: #444444, $alpha: 0.15);
+    transition: 1s ease-out;
+    &:hover {
+      background: #b07dfb;
+    }
+  }
+}

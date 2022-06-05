@@ -1,0 +1,111 @@
+main {
+  &.content {
+    grid-area: content;
+  }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  .col-wide {
+    grid-column: 1 / -1;
+  }
+
+  #img-1 {
+    grid-row: span 2;
+    &,
+    #img-2 {
+      align-self: end;
+    }
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .informations {
+    p + p {
+      margin-top: 30px;
+    }
+  }
+
+  .title {
+    color: #b07dfb;
+    h1 {
+      font-size: 3.75em;
+      line-height: 1;
+      font-weight: 700;
+    }
+    span {
+      font-size: 0.875em;
+      font-style: italic;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: flex-start;
+    span {
+      display: block;
+      color: #b07dfb;
+    }
+    div {
+      width: 80px;
+      position: relative;
+      text-align: center;
+      background: linear-gradient(135deg, #8844ee, #b07dfb);
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px 0px rgba($color: #444444, $alpha: 0.15);
+      &:first-child {
+        margin-right: 30px;
+      }
+      .number {
+        font-size: 3em;
+        line-height: 1;
+        margin: 10px auto;
+      }
+      .unit {
+        background: white;
+        border-radius: 0 0 5px 5px;
+        padding: 5px 0;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+  #contrast {
+    font-size: 0.875em;
+    color: #b07dfb;
+    max-width: 16em;
+  }
+
+  .cite,
+  .attributes {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba($color: #444444, $alpha: 0.15);
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    align-self: start;
+    p {
+      color: white;
+      font-size: 1.5em;
+      font-style: italic;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    li {
+      color: white;
+      font-family: Courier, monospace;
+      font-size: 1.125em;
+      padding: 15px;
+    }
+    li + li {
+      border-top: 2px solid #b07dfb;
+    }
+  }
+}
